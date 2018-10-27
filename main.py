@@ -7,8 +7,8 @@ Example:
 
 import lib.scraper as webscraper
 import lib.plotter as plotter
-import lib.filewriter as writer
 import sys
+import pickle
 
 if __name__ == '__main__':
     # url = 'https://pythoniter.appspot.com/?fbclid=IwAR2Kwxu7QKANwVBk82XP8FL85QvSCLe9dmzk-w78OxnHyU7qChsZxsCPhys'
@@ -16,12 +16,25 @@ if __name__ == '__main__':
     # url = 'http://www.pyregex.com/'
       
     try:
-        _, url, depth = sys.argv   
+        _, url, depth = sys.argv
+        pickle_module_name = 'webscrape.p'
+
+        print('Starting webscrape.')   
         result = webscraper.scrape_starter(url, int(depth))
-        writer.write_to_file(result)
+        print('Webscraping finished succesfully.')
 
+        print('\nSaving pickle module as: {}'.format(pickle_module_name))
+        try:
+            pickle.dump( result, open( pickle_module_name, "wb" ))
+            print('Pickle module was saved succesfully.')
+        except Exception as e:
+            print('Pickle module save failure!')
+
+        print('\nCreating and viewing plot.')
         plotter.make_graph(result)
-
+  
     except Exception as e:
         print(__doc__)
         sys.exit(1)  
+
+        

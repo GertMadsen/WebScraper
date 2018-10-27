@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 
 def scrape_starter(url, depth):
-    print('Scraping from start url: {}'.format(url))
+    print('Scraping from: {}'.format(url))
     print('Scraping to depth: {}'.format(depth))
     return scrape_links(url, depth)
 
