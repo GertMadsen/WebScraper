@@ -11,9 +11,6 @@ import sys
 import pickle
 
 if __name__ == '__main__':
-    # url = 'https://pythoniter.appspot.com/?fbclid=IwAR2Kwxu7QKANwVBk82XP8FL85QvSCLe9dmzk-w78OxnHyU7qChsZxsCPhys'
-    # url = 'https://www.dr.dk/'
-    # url = 'http://www.pyregex.com/'
       
     try:
         _, url, depth = sys.argv
@@ -23,7 +20,7 @@ if __name__ == '__main__':
         result = webscraper.scrape_starter(url, int(depth))
         print('Webscraping finished succesfully.')
 
-        print('\nSaving pickle module as: {}'.format(pickle_module_name))
+        print('\nSaving result dictionary in a pickle module as: {}'.format(pickle_module_name))
         try:
             pickle.dump( result, open( pickle_module_name, "wb" ))
             print('Pickle module was saved succesfully.')
