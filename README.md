@@ -8,7 +8,7 @@
 * Clone the project on your computer.
 * How to use the program:
   * In a command prompt or bash with Python available, use the following command together with the URL to the page to scrape and the depth to be scraped:
-  * python main.py <url> <depth>
+  * python main.py \<foo> <url> <depth>
   * example: python main.py http://www.dr.dk 3
   
 
