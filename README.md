@@ -17,4 +17,4 @@
 ### Warning:
 * Large depth value will result in a long scraping runtime.
   
-
+### Plot example for http://www.pyregex.com/ with a depth of 4:
