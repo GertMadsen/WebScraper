@@ -1,4 +1,5 @@
 /lib/__pycache__
-*.p
-test_pickle.py
+/pickle_modules/*.p
+/pickle_modules/test_pickle.py
+/plots/*.png
 testlinks.txt

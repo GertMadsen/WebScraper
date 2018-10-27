@@ -1,8 +1,8 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+import os
 
-def make_graph(url_dict):
-
+def make_graph(url_dict, plot_file):
     plot_data = []   
     for key, values in url_dict.items():
         for value in values:
@@ -19,4 +19,10 @@ def make_graph(url_dict):
       'arrows': False,
     }
     nx.draw(DG, **options)
+
+    plot_dir = 'plots'
+    if not os.path.isdir(plot_dir):
+        os.makedirs(plot_dir)
+    plt.savefig(os.path.join(plot_dir, plot_file))
     plt.show()
+    plt.close()
