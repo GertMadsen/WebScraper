@@ -11,7 +11,7 @@
   * python main.py \<url> \<depth>
   * example: python main.py http://www.dr.dk 3
   
-### WARNING:
-* Large depth will result in a long scraping runtime.
+### Warning
+* Large depth value will result in a long scraping runtime.
   
 
