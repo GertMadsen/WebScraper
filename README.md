@@ -19,4 +19,4 @@
   
 ### Plot example for http://www.pyregex.com/ with a depth of 3:
 
-![Plotting](https://github.com/GertMadsen/pictures/blob/master/most_used_words.png)
+![Plotting](https://github.com/GertMadsen/pictures/blob/master/pyregex.png)
