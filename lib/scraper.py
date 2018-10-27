@@ -19,8 +19,8 @@ def scrape_links(from_url, depth, for_depth=0, all_links={}):
         for_depth += 1
         if for_depth < depth:           
             for url in tqdm(url_list):
-                 if (url not in all_links): 
-                     scrape_links(url, depth, for_depth, all_links)                    
+                if (url not in all_links): 
+                    scrape_links(url, depth, for_depth, all_links)                    
     except:
         pass
     return all_links
