@@ -18,3 +18,5 @@
 * Large depth value will result in a long scraping runtime.
   
 ### Plot example for http://www.pyregex.com/ with a depth of 4:
+
+![Plotting](https://github.com/GertMadsen/pictures/blob/master/most_used_words.png)
