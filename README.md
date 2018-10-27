@@ -7,9 +7,12 @@
 ### Procedure to run the program:
 * Clone the project on your computer.
 * How to use the program:
-  * In a command prompt or bash with Python available, use the following command together with the URL to the page to scrape and the depth to be scraped:
-  * python main.py \<url> \<depth>
-  * example: python main.py http://www.dr.dk 3
+  * In a command prompt or bash with Python available, use the following command
+  * python main.py \<url> \<depth> \<modulename>
+   * \<url> - url to scrape
+   * \<depth> - how deep to scrape
+   * \<modulename> name to use for pickle module (.p will be added when module is created)
+  * example: python main.py http://www.pyregex.com/ 3 pyregex
   
 ### Warning:
 * Large depth value will result in a long scraping runtime.
