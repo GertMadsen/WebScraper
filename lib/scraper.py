@@ -14,8 +14,7 @@ def scrape_links(from_url, depth, for_depth=0, all_links={}):
         r = requests.get(from_url, timeout=5)
         r.raise_for_status()
         soup = bs4.BeautifulSoup(r.text, 'html5lib')
-        raw_list = [a['href'] for a in soup.find_all('a', href=True)]
-        url_list =[url for url in raw_list if url.startswith('http')] 
+        url_list = [a['href'] for a in soup.find_all('a', href=True) if a['href'].startswith('http')]
         all_links.update({from_url: url_list}) 
         for_depth += 1
         if for_depth < depth:           

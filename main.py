@@ -2,7 +2,7 @@
 Usage: 
     python main.py <url> <depth> <modulename>
 Example:
-   python webscrape.py https://www.dr.dk/ 3
+   python main.py http://www.pyregex.com/ 3 pyregex
 '''
 
 import lib.scraper as webscraper
@@ -15,13 +15,14 @@ if __name__ == '__main__':
     try:
         _, url, depth, module_name = sys.argv
         module_name += ".p"
+
         print('Starting webscrape.')   
         result = webscraper.scrape_starter(url, int(depth))
         print('Webscraping finished succesfully.')
-
-        print('\nSaving result dictionary in a pickle module as: {}'.format(pickle_module_name))
+        
+        print('\nSaving result dictionary in a pickle module as: {}'.format(module_name))        
         try:
-            pickle.dump( result, open( pickle_module_name, "wb" ))
+            pickle.dump( result, open( module_name, "wb" ))
             print('Pickle module was saved succesfully.')
         except Exception as e:
             print('Pickle module save failure!')

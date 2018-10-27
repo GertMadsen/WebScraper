@@ -1,4 +1,4 @@
 /lib/__pycache__
-webscrape.p
+*.p
 test_pickle.py
 testlinks.txt
