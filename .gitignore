@@ -1,5 +1,3 @@
-#__pycache__
-__pycache__
-
+/lib/__pycache__
 webscrape.p
 test_pickle.py
