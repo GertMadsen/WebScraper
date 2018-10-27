@@ -12,7 +12,7 @@
    * \<url> - url to scrape
    * \<depth> - how deep to scrape
    * \<modulename> name to use for pickle module (.p will be added when module is created)
-  * example: python main.py https://www.dr.dk/ 3 dr_dk
+  * example: python main.py http://www.pyregex.com/ 3 pyregex
   
 ### Warning:
 * Large depth value will result in a long scraping runtime.
