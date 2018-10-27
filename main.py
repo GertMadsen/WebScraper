@@ -1,6 +1,6 @@
 '''
 Usage: 
-    python main.py <url> <depth>
+    python main.py <url> <depth> <modulename>
 Example:
    python webscrape.py https://www.dr.dk/ 3
 '''
@@ -13,9 +13,8 @@ import pickle
 if __name__ == '__main__':
       
     try:
-        _, url, depth = sys.argv
-        pickle_module_name = 'webscrape.p'
-
+        _, url, depth, module_name = sys.argv
+        module_name += ".p"
         print('Starting webscrape.')   
         result = webscraper.scrape_starter(url, int(depth))
         print('Webscraping finished succesfully.')
