@@ -2,7 +2,7 @@
 ### WebScraper for scraping internet pages for http links.
 
 * This program scrapes an internet page from a given url and subpages according to the depth alse given. 
-* This program also produces a pickle module file with the scraped links and an plot that shows the connection between the scraped links.
+* This program also produces a pickle module file with the scraped links and a circular networkx DiGraph plot that shows the connection between the scraped links.
 
 ### Dependencies:
 * Python - Anaconda Distribution 
