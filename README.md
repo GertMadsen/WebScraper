@@ -25,6 +25,6 @@
 * Large depth value will result in a long scraping runtime.
 * For testing use a depth less than 4 to ensure a short runtime.
   
-### Plot example for http://www.dr.dk/ with a depth of 3:
+### Plot example for http://www.dr.dk/ with a depth of 4:
 
 ![Plotting](https://github.com/GertMadsen/pictures/blob/master/dr_dk.png)
