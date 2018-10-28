@@ -4,7 +4,12 @@
 * This program scrapes an internet page from a given url and subpages according to the depth alse given. 
 * This program also produces a pickle module file with the scraped links and an plot that shows the connection between the scraped links.
 
-### 
+### Dependencies:
+* Python - Anaconda Distribution 
+ * *In order to make sure that all librabies are present for a problem free execution of the software, we recommend using an Anaconda distribution of Python. But the software will probably also run with other distributiions, but then libraries such as Requests might need to be installed.*
+ 
+* Networkx
+ * To install networkx via Anaconda use: conda install -c anaconda networkx 
 
 ### Procedure to run the program:
 * Clone the project on your computer.
